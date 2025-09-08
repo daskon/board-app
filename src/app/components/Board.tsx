@@ -2,14 +2,14 @@
 
 import React, { useEffect } from "react";
 import Swimlane from "./Swimlane";
-import { useTaskStore } from "../store/useTaskStore";
+import { Task, useTaskStore } from "../store/useTaskStore";
 import tasksData from "../data/tasks.json";
 
 const Board: React.FC = () => {
   const { tasks, setTasks } = useTaskStore();
 
   useEffect(() => {
-    setTasks(tasksData);
+    setTasks(tasksData as Task[]);
   }, [setTasks]);
 
   return (
