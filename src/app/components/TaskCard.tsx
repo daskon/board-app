@@ -6,7 +6,6 @@ import {
   LinkIcon,
   ChatBubbleLeftIcon,
   CalendarDaysIcon,
-  PhotoIcon,
 } from "@heroicons/react/24/outline";
 
 const TaskCard: React.FC<{ task: Task }> = ({ task }) => {
@@ -49,8 +48,33 @@ const TaskCard: React.FC<{ task: Task }> = ({ task }) => {
       <h4 className="font-semibold text-gray-900 text-sm">{task.title}</h4>
 
       <div className="flex items-center gap-2">
+        <div className="flex items-center">
+          {task.users?.slice(0, 3).map((user, index) => (
+            <div
+              key={user.id}
+              className="h-5 w-5 rounded-full flex items-center justify-center text-xs font-semibold text-white border-2 border-white"
+              style={{
+                backgroundColor: "black",
+                marginLeft: index === 0 ? 0 : -8,
+                zIndex: 10 - index,
+              }}
+              title={user.name}
+            >
+              {user.name.charAt(0).toUpperCase()}
+            </div>
+          ))}
 
-        <PhotoIcon className="h-5 w-5 text-gray-600" />
+          {task.users && task.users.length > 3 && (
+            <div
+              className="h-5 w-5 rounded-full flex items-center justify-center text-xs font-semibold text-white bg-gray-400 border-2 border-white"
+              style={{ marginLeft: -8 }}
+              title={`${task.users.length - 3} more users`}
+            >
+              +{task.users.length - 3}
+            </div>
+          )}
+        </div>
+
         {task.priority && (
           <span
             className={`flex items-center text-xs px-2 py-1 rounded-md ${

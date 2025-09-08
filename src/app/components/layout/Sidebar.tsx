@@ -1,23 +1,17 @@
 import React from "react";
-import {
-  HomeIcon,
-  FolderIcon,
-  UsersIcon,
-  Cog6ToothIcon,
-} from "@heroicons/react/24/outline";
+import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 
 const links = [
-  { name: "Dashboard", icon: <HomeIcon className="w-6 h-6" /> },
-  { name: "Dropdown", icon: <FolderIcon className="w-6 h-6" /> },
-  { name: "Messages", icon: <UsersIcon className="w-6 h-6" />, badge: 3 },
-  { name: "Calendar", icon: <FolderIcon className="w-6 h-6" /> },
-  { name: "Team members", icon: <UsersIcon className="w-6 h-6" /> },
+  { name: "Dashboard", icon: <img src="/home.svg" className="w-6 h-6" alt="dashboard" /> },
+  { name: "Dropdown", icon: <img src="/folder.svg" className="w-6 h-6" alt="folder" /> },
+  { name: "Messages", icon: <img src="/message.svg" className="w-6 h-6" alt="message" />, badge: 3 },
+  { name: "Calendar", icon: <img src="/calender.svg" className="w-6 h-6" alt="calender" /> },
+  { name: "Team members", icon: <img src="/team.svg" className="w-6 h-6" alt="team" /> },
 ];
 
 const Sidebar: React.FC = () => {
   return (
     <aside className="w-64 bg-white border-gray-200 flex flex-col">
-      {/* Logo */}
       <div className="h-18 flex items-center px-6 font-bold text-lg text-blue-600">
         Board <span className="text-gray-900">App</span>
       </div>

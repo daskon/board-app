@@ -10,6 +10,7 @@ export type Task = {
     links?: number;
     comments?: number;
     dueDate?: string;
+    users?: { id: string; name: string; color?: string }[];
 }
 
 type Store = {

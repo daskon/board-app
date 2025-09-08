@@ -1,25 +1,24 @@
 import React from "react";
-import { MagnifyingGlassIcon, BellIcon, PlusIcon, FunnelIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon, BellIcon, PlusIcon } from "@heroicons/react/24/outline";
 import SearchBar from "../SearchBar";
 
 const Header: React.FC = () => {
   return (
     <header className="h-20 bg-white border-b border-gray-200 flex items-center justify-end px-6">
 
-      <div className="flex items-center space-x-5">
-
-        <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium shadow-sm">
+      <div className="flex items-center space-x-2">
+        <button className="flex items-center bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium shadow-sm">
           Create new board
-          <PlusIcon className="w-5 h-5 ml-2" />
+          <PlusIcon className="w-4 h-4 ml-1" />
         </button>
 
-        <div className="relative w-72">
+        <div className="relative w-100">
           <MagnifyingGlassIcon className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
           <SearchBar />
         </div>
 
-        <button className="p-2 hover:bg-gray-100 rounded-lg">
-          <FunnelIcon className="w-5 h-5 text-gray-600" />
+        <button className="p-2 hover:bg-gray-100 rounded-lg -ml-40">
+          <img src="/settings.svg" className="w-6 h-6" alt="filter" />
         </button>
 
         <button className="p-2 hover:bg-gray-100 rounded-lg relative">

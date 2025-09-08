@@ -12,7 +12,7 @@ const SearchBar: React.FC = () => {
       value={searchQuery}
       onChange={(e) => setSearchQuery(e.target.value)}
       placeholder="Search tasks..."
-      className="w-full pl-10 md:w-1/2 p-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+      className="w-full pl-10 md:w-1/2 p-2 bg-gray-100 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
     />
   );
 };

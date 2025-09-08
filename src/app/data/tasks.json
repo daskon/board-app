@@ -1,167 +1,149 @@
 [
   {
     "id": "1",
-    "title": "User interview",
+    "title": "User Interview",
     "status": "todo",
-    "description": "Research interviews with users",
     "category": "Research",
     "priority": "Low",
     "links": 2,
     "comments": 2,
-    "dueDate": "Tomorrow"
+    "dueDate": "Tomorrow",
+    "users": [
+      { "id": "u1", "name": "Alice" },
+      { "id": "u2", "name": "Bob" },
+      { "id": "u3", "name": "Charlie" },
+      { "id": "u4", "name": "David" }
+    ]
   },
   {
     "id": "2",
-    "title": "UI Design",
+    "title": "Design Homepage",
     "status": "inprogress",
-    "description": "Design the UI screens",
     "category": "Design",
     "priority": "High",
-    "links": 3,
+    "links": 1,
     "comments": 5,
-    "dueDate": "Tomorrow"
+    "dueDate": "Today",
+    "users": [
+      { "id": "u5", "name": "Eve" },
+      { "id": "u6", "name": "Frank" }
+    ]
   },
   {
     "id": "3",
-    "title": "Prototype",
+    "title": "Research Competitors",
     "status": "approved",
-    "description": "Build prototype for testing",
     "category": "Research",
     "priority": "Low",
-    "links": 10,
-    "comments": 25,
-    "dueDate": "Next Week"
+    "links": 0,
+    "comments": 1,
+    "dueDate": "Next Week",
+    "users": [
+      { "id": "u1", "name": "Alice" }
+    ]
   },
   {
     "id": "4",
-    "title": "Group Management",
-    "status": "reject",
-    "description": "Old task not needed anymore",
-    "category": "Other",
-    "priority": "Low",
-    "links": 0,
-    "comments": 8,
-    "dueDate": "Today"
+    "title": "Wireframe Dashboard",
+    "status": "todo",
+    "category": "Design",
+    "priority": "High",
+    "links": 3,
+    "comments": 2,
+    "dueDate": "Tomorrow",
+    "users": [
+      { "id": "u2", "name": "Bob" },
+      { "id": "u3", "name": "Charlie" },
+      { "id": "u4", "name": "David" },
+      { "id": "u5", "name": "Eve" },
+      { "id": "u6", "name": "Frank" }
+    ]
   },
   {
     "id": "5",
-    "title": "Onboarding Flow",
-    "status": "todo",
-    "description": "Plan onboarding journey for new users",
-    "category": "Design",
-    "priority": "High",
-    "links": 1,
-    "comments": 6,
-    "dueDate": "This Week"
+    "title": "Setup Analytics",
+    "status": "reject",
+    "category": "Other",
+    "priority": "Low",
+    "links": 2,
+    "comments": 0,
+    "dueDate": "Next Month",
+    "users": [
+      { "id": "u1", "name": "Alice" },
+      { "id": "u5", "name": "Eve" }
+    ]
   },
   {
     "id": "6",
-    "title": "API Integration",
+    "title": "Content Planning",
     "status": "inprogress",
-    "description": "Integrate with payment gateway API",
     "category": "Research",
     "priority": "High",
-    "links": 5,
-    "comments": 15,
-    "dueDate": "Next Month"
+    "links": 1,
+    "comments": 2,
+    "dueDate": "Tomorrow",
+    "users": [
+      { "id": "u3", "name": "Charlie" }
+    ]
   },
   {
     "id": "7",
-    "title": "Bug Fixing",
-    "status": "todo",
-    "description": "Resolve high priority bugs from QA",
-    "category": "Other",
+    "title": "Prototype Testing",
+    "status": "approved",
+    "category": "Design",
     "priority": "High",
-    "links": 2,
-    "comments": 12,
-    "dueDate": "Today"
+    "links": 4,
+    "comments": 3,
+    "dueDate": "Today",
+    "users": [
+      { "id": "u2", "name": "Bob" },
+      { "id": "u4", "name": "David" },
+      { "id": "u6", "name": "Frank" }
+    ]
   },
   {
     "id": "8",
-    "title": "Database Schema",
-    "status": "approved",
-    "description": "Finalize schema design for database",
-    "category": "Research",
+    "title": "Bug Fixing",
+    "status": "todo",
+    "category": "Other",
     "priority": "Low",
-    "links": 4,
-    "comments": 9,
-    "dueDate": "Friday"
+    "links": 0,
+    "comments": 1,
+    "dueDate": "Tomorrow",
+    "users": [
+      { "id": "u1", "name": "Alice" },
+      { "id": "u2", "name": "Bob" }
+    ]
   },
   {
     "id": "9",
-    "title": "Marketing Campaign",
-    "status": "todo",
-    "description": "Prepare assets for product launch campaign",
-    "category": "Design",
-    "priority": "High",
-    "links": 6,
-    "comments": 20,
-    "dueDate": "Next Week"
-  },
-  {
-    "id": "10",
-    "title": "Team Meeting",
+    "title": "Backend API",
     "status": "inprogress",
-    "description": "Weekly sync with project team",
-    "category": "Other",
-    "priority": "Low",
-    "links": 1,
-    "comments": 18,
-    "dueDate": "Tomorrow"
-  },
-  {
-    "id": "11",
-    "title": "Testing Automation",
-    "status": "approved",
-    "description": "Setup automated tests for core flows",
-    "category": "Research",
-    "priority": "High",
-    "links": 8,
-    "comments": 30,
-    "dueDate": "Next Month"
-  },
-  {
-    "id": "12",
-    "title": "Wireframes",
-    "status": "reject",
-    "description": "Discarded wireframes from old concept",
-    "category": "Design",
-    "priority": "Low",
-    "links": 0,
-    "comments": 2,
-    "dueDate": "Last Week"
-  },
-  {
-    "id": "13",
-    "title": "Security Review",
-    "status": "todo",
-    "description": "Perform security review of application",
     "category": "Research",
     "priority": "High",
     "links": 3,
-    "comments": 7,
-    "dueDate": "This Week"
+    "comments": 4,
+    "dueDate": "Next Week",
+    "users": [
+      { "id": "u3", "name": "Charlie" },
+      { "id": "u5", "name": "Eve" },
+      { "id": "u6", "name": "Frank" },
+      { "id": "u4", "name": "David" }
+    ]
   },
   {
-    "id": "14",
-    "title": "User Feedback Analysis",
-    "status": "inprogress",
-    "description": "Analyze feedback collected from surveys",
-    "category": "Research",
-    "priority": "Low",
-    "links": 2,
-    "comments": 14,
-    "dueDate": "Tomorrow"
-  },
-  {
-    "id": "15",
-    "title": "Dashboard Design",
+    "id": "10",
+    "title": "Final Review",
     "status": "approved",
-    "description": "Finalize dashboard UI layout",
     "category": "Design",
-    "priority": "High",
-    "links": 5,
-    "comments": 22,
-    "dueDate": "Next Week"
+    "priority": "Low",
+    "links": 1,
+    "comments": 0,
+    "dueDate": "Today",
+    "users": [
+      { "id": "u1", "name": "Alice" },
+      { "id": "u2", "name": "Bob" },
+      { "id": "u3", "name": "Charlie" }
+    ]
   }
 ]
