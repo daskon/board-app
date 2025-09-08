@@ -7,6 +7,7 @@ export default function Home() {
       <Layout>
         <Board />
       </Layout>
+
     </main>
   );
 }

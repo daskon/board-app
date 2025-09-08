@@ -22,7 +22,10 @@ const BoardHeader: React.FC = () => {
           <h1 className="text-2xl font-semibold text-gray-900">
             Sport Xi Project
           </h1>
-          <span className="text-sm font-medium bg-yellow-400 text-white px-3 py-1 rounded-full">
+          <span
+            className="text-sm font-medium text-black px-3 py-1 rounded-full"
+            style={{backgroundColor: "#FFA800"}}
+          >
             In progress
           </span>
         </div>
@@ -73,9 +76,9 @@ const BoardHeader: React.FC = () => {
 
       <div className="flex border-t border-gray-200">
         {[
-          { label: "To Do", color: "bg-gray-100 text-gray-800" },
-          { label: "In Progress", color: "bg-yellow-400 text-white" },
-          { label: "Approved", color: "bg-lime-400 text-white" },
+          { label: "To Do", color: "bg-[#E6E8EC] text-black" },
+          { label: "In Progress", color: "bg-[#FFA800] text-black" },
+          { label: "Approved", color: "bg-[#AEE753] text-black" },
           { label: "Reject", color: "bg-red-600 text-white" },
         ].map((lane) => (
           <div

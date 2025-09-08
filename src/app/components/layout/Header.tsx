@@ -7,7 +7,10 @@ const Header: React.FC = () => {
     <header className="h-20 bg-white border-b border-gray-200 flex items-center justify-end px-6">
 
       <div className="flex items-center space-x-2">
-        <button className="flex items-center bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium shadow-sm">
+        <button
+          className="flex items-center text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium shadow-sm"
+          style={{ backgroundColor: "#3772FF" }}
+        >
           Create new board
           <PlusIcon className="w-4 h-4 ml-1" />
         </button>
