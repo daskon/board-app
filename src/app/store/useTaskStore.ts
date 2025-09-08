@@ -5,6 +5,11 @@ export type Task = {
     title: string;
     description?: string;
     status: "todo" | "inprogress" | "approved" | "reject";
+    category: "Research" | "Design" | "Other";
+    priority?: "Low" | "High";
+    links?: number;
+    comments?: number;
+    dueDate?: string;
 }
 
 type Store = {

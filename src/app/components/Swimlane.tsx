@@ -4,7 +4,6 @@ import { Task } from "../store/useTaskStore";
 import { useDroppable } from "@dnd-kit/core";
 
 type Props = {
-  title: string;
   status: Task["status"];
   tasks: Task[];
 };
@@ -16,7 +15,7 @@ const statusStyles: Record<Task["status"], string> = {
   reject: "bg-red-200 text-red-800",
 };
 
-const Swimlane: React.FC<Props> = ({ title, status, tasks }) => {
+const Swimlane: React.FC<Props> = ({ status, tasks }) => {
   const { setNodeRef } = useDroppable({ id: status });
   return (
     <div
@@ -24,12 +23,6 @@ const Swimlane: React.FC<Props> = ({ title, status, tasks }) => {
       className="flex flex-col bg-gray-50 rounded-xl p-4 min-h-[500px]"
     >
       <div className="flex items-center justify-between mb-3">
-        <h3 className="font-bold text-gray-700 text-sm">{title}</h3>
-        <span
-          className={`text-xs px-2 py-1 rounded-full font-medium ${statusStyles[status]}`}
-        >
-          {tasks.length}
-        </span>
       </div>
       <div className="flex-1">
         {tasks.map((task) => (

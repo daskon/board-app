@@ -3,24 +3,165 @@
     "id": "1",
     "title": "User interview",
     "status": "todo",
-    "description": "Research interviews with users"
+    "description": "Research interviews with users",
+    "category": "Research",
+    "priority": "Low",
+    "links": 2,
+    "comments": 2,
+    "dueDate": "Tomorrow"
   },
   {
     "id": "2",
     "title": "UI Design",
     "status": "inprogress",
-    "description": "Design the UI screens"
+    "description": "Design the UI screens",
+    "category": "Design",
+    "priority": "High",
+    "links": 3,
+    "comments": 5,
+    "dueDate": "Tomorrow"
   },
   {
     "id": "3",
     "title": "Prototype",
     "status": "approved",
-    "description": "Build prototype for testing"
+    "description": "Build prototype for testing",
+    "category": "Research",
+    "priority": "Low",
+    "links": 10,
+    "comments": 25,
+    "dueDate": "Next Week"
   },
   {
     "id": "4",
     "title": "Group Management",
     "status": "reject",
-    "description": "Old task not needed anymore"
+    "description": "Old task not needed anymore",
+    "category": "Other",
+    "priority": "Low",
+    "links": 0,
+    "comments": 8,
+    "dueDate": "Today"
+  },
+  {
+    "id": "5",
+    "title": "Onboarding Flow",
+    "status": "todo",
+    "description": "Plan onboarding journey for new users",
+    "category": "Design",
+    "priority": "High",
+    "links": 1,
+    "comments": 6,
+    "dueDate": "This Week"
+  },
+  {
+    "id": "6",
+    "title": "API Integration",
+    "status": "inprogress",
+    "description": "Integrate with payment gateway API",
+    "category": "Research",
+    "priority": "High",
+    "links": 5,
+    "comments": 15,
+    "dueDate": "Next Month"
+  },
+  {
+    "id": "7",
+    "title": "Bug Fixing",
+    "status": "todo",
+    "description": "Resolve high priority bugs from QA",
+    "category": "Other",
+    "priority": "High",
+    "links": 2,
+    "comments": 12,
+    "dueDate": "Today"
+  },
+  {
+    "id": "8",
+    "title": "Database Schema",
+    "status": "approved",
+    "description": "Finalize schema design for database",
+    "category": "Research",
+    "priority": "Low",
+    "links": 4,
+    "comments": 9,
+    "dueDate": "Friday"
+  },
+  {
+    "id": "9",
+    "title": "Marketing Campaign",
+    "status": "todo",
+    "description": "Prepare assets for product launch campaign",
+    "category": "Design",
+    "priority": "High",
+    "links": 6,
+    "comments": 20,
+    "dueDate": "Next Week"
+  },
+  {
+    "id": "10",
+    "title": "Team Meeting",
+    "status": "inprogress",
+    "description": "Weekly sync with project team",
+    "category": "Other",
+    "priority": "Low",
+    "links": 1,
+    "comments": 18,
+    "dueDate": "Tomorrow"
+  },
+  {
+    "id": "11",
+    "title": "Testing Automation",
+    "status": "approved",
+    "description": "Setup automated tests for core flows",
+    "category": "Research",
+    "priority": "High",
+    "links": 8,
+    "comments": 30,
+    "dueDate": "Next Month"
+  },
+  {
+    "id": "12",
+    "title": "Wireframes",
+    "status": "reject",
+    "description": "Discarded wireframes from old concept",
+    "category": "Design",
+    "priority": "Low",
+    "links": 0,
+    "comments": 2,
+    "dueDate": "Last Week"
+  },
+  {
+    "id": "13",
+    "title": "Security Review",
+    "status": "todo",
+    "description": "Perform security review of application",
+    "category": "Research",
+    "priority": "High",
+    "links": 3,
+    "comments": 7,
+    "dueDate": "This Week"
+  },
+  {
+    "id": "14",
+    "title": "User Feedback Analysis",
+    "status": "inprogress",
+    "description": "Analyze feedback collected from surveys",
+    "category": "Research",
+    "priority": "Low",
+    "links": 2,
+    "comments": 14,
+    "dueDate": "Tomorrow"
+  },
+  {
+    "id": "15",
+    "title": "Dashboard Design",
+    "status": "approved",
+    "description": "Finalize dashboard UI layout",
+    "category": "Design",
+    "priority": "High",
+    "links": 5,
+    "comments": 22,
+    "dueDate": "Next Week"
   }
 ]
