@@ -9,18 +9,22 @@ export type Task = {
 
 type Store = {
   tasks: Task[];
+  searchQuery: string;
   setTasks: (tasks: Task[]) => void;
+  setSearchQuery: (q: string) => void;
   updateTaskStatus: (id: string, status: Task["status"]) => void;
 };
 
 export const useTaskStore = create<Store>((set) => ({
   tasks: [],
+  searchQuery: "",
   setTasks: (tasks) => {
     set({ tasks });
     if (typeof window !== "undefined") {
       localStorage.setItem("tasks", JSON.stringify(tasks));
     }
   },
+  setSearchQuery: (q) => set({ searchQuery: q}),
   updateTaskStatus: (id, status) =>
     set((state) => {
       const updated = state.tasks.map((t) =>
