@@ -17,12 +17,12 @@ const TaskCard: React.FC<{ task: Task }> = ({ task }) => {
         {...listeners}
         {...attributes}
         style={style}
-        className="bg-white rounded-xl shadow p-3 mb-3 border border-gray-200"
+        className="bg-white rounded-xl shadow p-4 mb-4 border border-gray-200 cursor-grab hover:shadow-md transition-shadow"
     >
-      <h4 className="font-semibold text-gray-800">{task.title}</h4>
-      {task.description && (
-        <p className="text-sm text-gray-500 mt-1">{task.description}</p>
-      )}
+        <h4 className="font-semibold text-gray-800 text-sm">{task.title}</h4>
+        {task.description && (
+          <p className="text-sm text-gray-500 mt-1">{task.description}</p>
+        )}
     </div>
   );
 };
